@@ -1,10 +1,19 @@
-/**
- * Created by sam.richard on 7/18/2017.
- */
+package com.company;
+import edu.digipen.Game;
+import edu.digipen.gameobject.GameObject;
+import edu.digipen.level.EmptyLevel;
+
 public class Main {
-    public static void main(String[] args)
-    {
-        System.out.println("good");
+
+    public static void main(String[] args) {
+        Game.initialize(800, 600, 60, new MainMenu());
+
+        while(Game.getQuit() == false)
+        {
+            Game.update();
+
+        }
+        Game.destroy();
 
     }
 }
