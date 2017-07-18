@@ -1,4 +1,5 @@
-package com.company;
+
+import com.company.MainMenu;
 import edu.digipen.Game;
 import edu.digipen.gameobject.GameObject;
 import edu.digipen.level.EmptyLevel;
