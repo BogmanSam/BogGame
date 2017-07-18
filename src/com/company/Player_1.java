@@ -19,28 +19,28 @@ public class Player_1 extends GameObject{
     public void update(float dt)
     {
 
-        if(InputManager.isPressed(KeyEvent.VK_UP))
+        if(InputManager.isPressed(KeyEvent.VK_W))
         {
             float y = getPositionY();
-            y +=20;
+            y +=10;
             setPositionY(y);
         }
-        if(InputManager.isPressed(KeyEvent.VK_DOWN))
+        if(InputManager.isPressed(KeyEvent.VK_S))
         {
             float y = getPositionY();
-            y +=-20;
+            y +=-10;
             setPositionY(y);
         }
-        if(InputManager.isPressed(KeyEvent.VK_LEFT))
+        if(InputManager.isPressed(KeyEvent.VK_A))
         {
             float x = getPositionX();
-            x +=-20;
+            x +=-10;
             setPositionX(x);
         }
-        if(InputManager.isPressed(KeyEvent.VK_RIGHT))
+        if(InputManager.isPressed(KeyEvent.VK_D))
         {
             float x = getPositionX();
-            x +=20;
+            x +=10;
             setPositionX(x);
         }
     }
