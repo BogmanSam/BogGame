@@ -38,10 +38,10 @@ public class MainMenu extends GameLevel {
 
 
         }
-        //if(InputManager.isPressed(KeyEvent.VK_SPACE))
-       // {
-           // GameLevelManager.goToLevel(new Level1());
-       // }
+        if(InputManager.isPressed(KeyEvent.VK_SPACE))
+        {
+            GameLevelManager.goToLevel(new Level1());
+        }
 
 
 
