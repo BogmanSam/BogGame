@@ -46,7 +46,7 @@ public class Bullet extends GameObject
     @Override
     public void collisionReaction(GameObject collidedWith)
     {
-        if(collidedWith.getName().equals("rock"))
+        if(collidedWith.getName().equals("rock") || collidedWith.getName().equals("Enemy3"))
         {
             //kill();
             //System.out.println("test");

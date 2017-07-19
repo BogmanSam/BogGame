@@ -33,7 +33,7 @@ public class Enemy2 extends GameObject
     @Override
     public void collisionReaction(GameObject collidedWith)
     {
-        if(collidedWith.getName().equals(("Bullet"))  || collidedWith.getName().equals(("Enemy")))
+        if(collidedWith.getName().equals(("Bullet")))
         {
             kill();
 
