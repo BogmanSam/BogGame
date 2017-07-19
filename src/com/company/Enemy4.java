@@ -32,7 +32,7 @@ public class Enemy4 extends GameObject
         vector.setX(player_1.getPositionX() - getPositionX());
         vector.setY(player_1.getPositionY() - getPositionY());
         vector.normalize();
-        float speed = 0.001f;
+        float speed = 0.005f;
         setPositionX(getPositionX() + vector.getX() * speed);
         setPositionY(getPositionY() + vector.getY() * speed);
 
