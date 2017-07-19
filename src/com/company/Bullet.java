@@ -14,7 +14,7 @@ public class Bullet extends GameObject
     public Bullet()
     {
         super("Bullet",1,1,"ball.png");
-        setCircleCollider(0.5f);
+        setRectangleCollider(0.5f,0.5f);
     }
     public Vec2 direction;
     private void shoot()
