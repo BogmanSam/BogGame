@@ -3,6 +3,7 @@ package com.company;
 import edu.digipen.InputManager;
 import edu.digipen.gameobject.GameObject;
 import edu.digipen.gameobject.ObjectManager;
+import edu.digipen.level.GameLevelManager;
 import edu.digipen.math.Vec2;
 
 import java.awt.event.KeyEvent;
@@ -90,6 +91,7 @@ public class Player_1 extends GameObject{
     {
         if(collidedWith.getName().equals(("Enemy")) || collidedWith.getName().equals(("Enemy2")))
         {
+            GameLevelManager.goToLevel(new Level_1());
 
 
 
