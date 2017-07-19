@@ -31,8 +31,8 @@ public class Level_1 extends GameLevel{
         Rock.setPositionX(getRandomValue(-600, 600));
         Rock.setPositionY(getRandomValue(-600, 600));
         ObjectManager.addGameObject(Rock);
-        Graphics.setDrawCollisionData(true);
-        Graphics.setCollisionDataColor(0, 1, 0);
+       // Graphics.setDrawCollisionData(true);
+       // Graphics.setCollisionDataColor(0, 1, 0);
 
         for(int i= 0; i< 25; ++i)
         {
@@ -49,11 +49,16 @@ public class Level_1 extends GameLevel{
     @Override
     public void initialize() {
 
+
     }
+    public static float dtcounter=0;
 
     @Override
-    public void update(float arg0) {
-        PhysicsResolution.resolveContacts(arg0);
+    public void update(float dt) {
+        PhysicsResolution.resolveContacts(dt);
+        dtcounter += dt;
+        System.out.println(dtcounter);
+
     }
 
     @Override

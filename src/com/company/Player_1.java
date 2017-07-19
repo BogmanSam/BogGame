@@ -33,30 +33,56 @@ public class Player_1 extends GameObject{
 
         float movementSpeed= 3.0f;
         float rotationSpeed= 1.0f;
+        float shootingdelay = 0.5f;
 
         if(InputManager.isPressed(KeyEvent.VK_UP))
         {
             setRotation(0);
             direction.set(0.0f, 1.0f);
-            shoot();
+            if(Level_1.dtcounter >= shootingdelay)
+            {
+                System.out.println("Shoot Allowed");
+                shoot();
+                Level_1.dtcounter = 0;
+            }
         }
         if(InputManager.isPressed(KeyEvent.VK_DOWN))
         {
             setRotation(180);
             direction.set(0.0f, -1.0f);
-            shoot();
+            if(Level_1.dtcounter >= shootingdelay)
+            {
+                System.out.println("Shoot Allowed");
+                shoot();
+                Level_1.dtcounter = 0;
+            }
         }
         if(InputManager.isPressed(KeyEvent.VK_LEFT))
         {
             setRotation(270);
             direction.set(-1.0f, 0.0f);
-            shoot();
+            if(Level_1.dtcounter >= shootingdelay)
+            {
+                System.out.println("Shoot Allowed");
+                shoot();
+                Level_1.dtcounter = 0;
+            }
         }
         if(InputManager.isPressed(KeyEvent.VK_RIGHT))
         {
             setRotation(90);
             direction.set(1.0f, 0.0f);
-            shoot();
+
+
+            boolean haswaited;
+            if(Level_1.dtcounter >= shootingdelay)
+            {
+                System.out.println("Shoot Allowed");
+                shoot();
+                Level_1.dtcounter = 0;
+            }
+
+
         }
 
         if(InputManager.isPressed(KeyEvent.VK_W))
