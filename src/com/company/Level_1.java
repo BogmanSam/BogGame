@@ -27,12 +27,14 @@ public class Level_1 extends GameLevel{
         ObjectManager.addGameObject(enemy);
         GameObject enemy2 = new com.company.Enemy2();
         ObjectManager.addGameObject(enemy2);
+        GameObject enemy3= new com.company.Enemy3();
+        ObjectManager.addGameObject(enemy3);
         GameObject Rock = new com.company.Rock();
         Rock.setPositionX(getRandomValue(-600, 600));
         Rock.setPositionY(getRandomValue(-600, 600));
         ObjectManager.addGameObject(Rock);
-        Graphics.setDrawCollisionData(true);
-        Graphics.setCollisionDataColor(0, 1, 0);
+        //Graphics.setDrawCollisionData(true);
+        //Graphics.setCollisionDataColor(0, 1, 0);
 
         for(int i= 0; i< 25; ++i)
         {
