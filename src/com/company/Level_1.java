@@ -14,6 +14,8 @@ public class Level_1 extends GameLevel{
     public void create() {
         GameObject player_1 = new Player_1();
         ObjectManager.addGameObject(player_1);
+        GameObject enemy = new com.company.Enemy();
+        ObjectManager.addGameObject(enemy);
     }
 
     @Override
