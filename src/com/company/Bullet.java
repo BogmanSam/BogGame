@@ -13,7 +13,7 @@ public class Bullet extends GameObject
 {
     public Bullet()
     {
-        super("Bullet",32,32,"Ball.png");
+        super("Bullet",32,32,"ball.png");
     }
     public Vec2 direction;
     private void shoot()
@@ -22,7 +22,7 @@ public class Bullet extends GameObject
     }
     public Bullet(Vec2 direction_, Vec2 location)
     {
-        super("Bullet",5,5,"Ball.png");
+        super("Bullet",5,5,"ball.png");
         direction = new Vec2();
         direction.setX(direction_.getX());
         direction.setY(direction_.getY());
