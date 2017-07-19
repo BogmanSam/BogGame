@@ -35,6 +35,38 @@ public class Player_1 extends GameObject{
         float movementSpeed= 3.0f;
         float rotationSpeed= 1.0f;
 
+        /**if(InputManager.isPressed(KeyEvent.VK_A))
+        {
+            float rotation= getRotation();
+            rotation+= rotationSpeed;
+            setRotation(rotation);
+            rotation= (float)Math.toRadians(rotation);
+            direction.setX((float)Math.cos(rotation));
+            direction.setY((float) Math.sin(rotation));
+
+        }
+        if(InputManager.isPressed(KeyEvent.VK_D))
+        {
+            float rotation= getRotation();
+            rotation-= rotationSpeed;
+            setRotation(rotation);
+            rotation= (float)Math.toRadians(rotation);
+            direction.setX((float)Math.cos(rotation));
+            direction.setY((float) Math.sin(rotation));
+        }
+        if(InputManager.isPressed(KeyEvent.VK_W))
+        {
+            Vec2 position= getPosition();
+            position.add(Vec2.scale(direction, movementSpeed));
+            setPosition(position);
+        }
+        if(InputManager.isPressed(KeyEvent.VK_S))
+        {
+            Vec2 position= getPosition();
+            position.subtract(Vec2.scale(direction,movementSpeed));
+            setPosition(position);
+        }*/
+
         if(InputManager.isPressed(KeyEvent.VK_W))
         {
             float y = getPositionY();

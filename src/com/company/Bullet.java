@@ -26,7 +26,7 @@ public class Bullet extends GameObject
         direction = new Vec2();
         direction.setX(direction_.getX());
         direction.setY(direction_.getY());
-        setScaleX(7.0f);
+        setScaleX(3.0f);
         setScaleY(7.0f);
         setPosition(location);
     }
