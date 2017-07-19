@@ -13,8 +13,8 @@ public class Bullet extends GameObject
 {
     public Bullet()
     {
-        super("Bullet",1,1,"ball.png");
-        setRectangleCollider(0.5f,0.5f);
+        super("Bullet", 1, 1, "ball.png");
+
     }
     public Vec2 direction;
     private void shoot()
@@ -30,6 +30,7 @@ public class Bullet extends GameObject
         setScaleX(3.0f);
         setScaleY(7.0f);
         setPosition(location);
+        setRectangleCollider(0.5f, 0.5f);
     }
 
     @Override
@@ -41,6 +42,17 @@ public class Bullet extends GameObject
         {
             kill();
         }
+    }
+    @Override
+    public void collisionReaction(GameObject collidedWith)
+    {
+        if(collidedWith.getName().equals("rock"))
+        {
+            //kill();
+            //System.out.println("test");
+        }
+
+
     }
 
 }

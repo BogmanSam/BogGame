@@ -30,4 +30,19 @@ public class Enemy2 extends GameObject
         setPositionY(getPositionY() + vector.getY() * speed);
 
     }
+    @Override
+    public void collisionReaction(GameObject collidedWith)
+    {
+        if(collidedWith.getName().equals(("Bullet"))  || collidedWith.getName().equals(("Enemy")))
+        {
+            kill();
+
+
+
+
+
+        }
+
+
+    }
 }

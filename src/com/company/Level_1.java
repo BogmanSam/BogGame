@@ -31,8 +31,8 @@ public class Level_1 extends GameLevel{
         Rock.setPositionX(getRandomValue(-600, 600));
         Rock.setPositionY(getRandomValue(-600, 600));
         ObjectManager.addGameObject(Rock);
-       // Graphics.setDrawCollisionData(true);
-       // Graphics.setCollisionDataColor(0, 1, 0);
+        Graphics.setDrawCollisionData(true);
+        Graphics.setCollisionDataColor(0, 1, 0);
 
         for(int i= 0; i< 25; ++i)
         {

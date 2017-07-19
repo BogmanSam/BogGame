@@ -2,6 +2,7 @@ package com.company;
 
 import edu.digipen.gameobject.GameObject;
 import edu.digipen.gameobject.ObjectManager;
+import edu.digipen.level.GameLevelManager;
 import edu.digipen.math.Vec2;
 
 /**
@@ -12,7 +13,7 @@ public class Enemy extends GameObject
     public Enemy()
     {
         super("Enemy", 50, 50, "Boognish on Blue.png");
-        setPosition(200, 200);
+        setPosition(-200, -200);
         setRectangleCollider(25, 25);
 
 
@@ -34,6 +35,21 @@ public class Enemy extends GameObject
         float speed = 1f;
         setPositionX(getPositionX() + vector.getX() * speed);
         setPositionY(getPositionY() + vector.getY() * speed);
+
+    }
+    @Override
+    public void collisionReaction(GameObject collidedWith)
+    {
+        if(collidedWith.getName().equals(("Bullet")) || collidedWith.getName().equals(("Enemy2")))
+        {
+            kill();
+
+
+
+
+
+        }
+
 
     }
 }

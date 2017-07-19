@@ -16,8 +16,8 @@ public class Player_1 extends GameObject{
     public Vec2 direction= new Vec2(1.0f,0.0f);
     public Player_1()
     {
-        super ("Player_1",38,29,"Omana.png");
-        setRectangleCollider(19,14.5f);
+        super ("Player_1",28,28,"Omana.png");
+        setRectangleCollider(13f,13f);
     }
     private void shoot()
     {
@@ -123,6 +123,8 @@ public class Player_1 extends GameObject{
 
 
         }
+
+
 
 
     }
