@@ -1,12 +1,15 @@
 package com.company;
 
+import edu.digipen.InputManager;
 import edu.digipen.gameobject.GameObject;
 import edu.digipen.gameobject.ObjectManager;
 //import edu.digipen.graphics.Graphics;
 import edu.digipen.graphics.Graphics;
 import edu.digipen.level.GameLevel;
+import edu.digipen.level.GameLevelManager;
 import edu.digipen.math.PFRandom;
 
+import java.awt.event.KeyEvent;
 import java.util.Random;
 
 /**
@@ -63,7 +66,14 @@ public class Level_1 extends GameLevel{
         dtcounter += dt;
         System.out.println(dtcounter);
 
+        if(InputManager.isTriggered(KeyEvent.VK_R))
+        {
+            GameLevelManager.restartLevel();
+        }
     }
+
+
+
 
     @Override
     public void uninitialize() {
