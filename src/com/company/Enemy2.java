@@ -13,7 +13,7 @@ public class Enemy2 extends GameObject
     {
         super("Enemy2", 25, 25, "Boognish on Blue.png");
         setPosition(200,200);
-        setRectangleCollider(25, 25);
+        setRectangleCollider(12.5f, 12.5f);
 
 
     }
@@ -25,7 +25,7 @@ public class Enemy2 extends GameObject
         vector.setX(player_1.getPositionX() - getPositionX());
         vector.setY(player_1.getPositionY() - getPositionY());
         vector.normalize();
-        float speed = 3.5f;
+        float speed = 3.3f;
         setPositionX(getPositionX() + vector.getX() * speed);
         setPositionY(getPositionY() + vector.getY() * speed);
 

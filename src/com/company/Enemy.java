@@ -12,15 +12,21 @@ public class Enemy extends GameObject
     public Enemy()
     {
         super("Enemy", 50, 50, "Boognish on Blue.png");
-        setPosition(200,200);
+        setPosition(200, 200);
         setRectangleCollider(25, 25);
 
 
+
+
     }
+
+
+
     @Override public void update(float dt)
     {
         GameObject player_1 = ObjectManager.getGameObjectByName("Player_1");
         Vec2 vector = new Vec2();
+
 
         vector.setX(player_1.getPositionX() - getPositionX());
         vector.setY(player_1.getPositionY() - getPositionY());
