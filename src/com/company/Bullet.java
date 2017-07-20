@@ -47,9 +47,9 @@ public class Bullet extends GameObject
     public void collisionReaction(GameObject collidedWith)
     {
         PhysicsResolution.addContact(this, collidedWith);
-        if(collidedWith.getName().equals("rock"))
+        if((collidedWith.getName().equals("Enemy"))||(collidedWith.getName().equals("Enemy2"))||(collidedWith.getName().equals("Enemy4")))
         {
-            //kill();
+            kill();
             //System.out.println("test");
         }
 

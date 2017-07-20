@@ -22,6 +22,7 @@ public class Level_1 extends GameLevel{
         return r.nextFloat() * (max-min) +  min;
     }
 
+
     @Override
     public void create() {
         GameObject player_1 = new Player_1();
@@ -30,24 +31,24 @@ public class Level_1 extends GameLevel{
         player_1.setPositionX(300);
 
         GameObject enemy = new com.company.Enemy();
-        enemy.setPositionX(getRandomValue(-600,600));
+        enemy.setPositionX(getRandomValue(-600,0));
         enemy.setPositionY(getRandomValue(-600,600));
         ObjectManager.addGameObject(enemy);
         for(int i= 0; i< 15; ++i)
         {
             enemy = new Enemy();
-            enemy.setPosition(PFRandom.randomRange(-600, 600), PFRandom.randomRange(-600, 600));
+            enemy.setPosition(PFRandom.randomRange(-600, 0), PFRandom.randomRange(-600, 600));
             ObjectManager.addGameObject(enemy);
         }
 
         GameObject enemy2;
-        enemy.setPositionX(getRandomValue(-600,600));
+        enemy.setPositionX(getRandomValue(-600,0));
         enemy.setPositionY(getRandomValue(-600,600));
         ObjectManager.addGameObject(enemy);
         for(int i= 0; i< 10; ++i)
         {
             enemy2 = new Enemy2();
-            enemy2.setPosition(PFRandom.randomRange(-600, 600), PFRandom.randomRange(-600, 600));
+            enemy2.setPosition(PFRandom.randomRange(-600, 0), PFRandom.randomRange(-600, 600));
             ObjectManager.addGameObject(enemy2);
         }
 
