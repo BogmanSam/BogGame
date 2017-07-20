@@ -36,7 +36,6 @@ public class Level_1 extends GameLevel{
             enemy = new Enemy();
             enemy.setPosition(PFRandom.randomRange(-600, 600), PFRandom.randomRange(-600, 600));
             ObjectManager.addGameObject(enemy);
-
         }
 
         GameObject enemy2 = new com.company.Enemy2();
