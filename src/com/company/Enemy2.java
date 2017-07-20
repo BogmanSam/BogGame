@@ -12,8 +12,10 @@ public class Enemy2 extends GameObject
     public Enemy2()
     {
         super("Enemy2", 25, 25, "Boognish on Blue.png");
-        setPosition(200,200);
+        setPosition(200, 200);
         setRectangleCollider(12.5f, 12.5f);
+
+        Player_1.maxEnemies++;
 
 
     }
@@ -30,13 +32,17 @@ public class Enemy2 extends GameObject
         setPositionY(getPositionY() + vector.getY() * speed);
 
     }
+    boolean dead = false;
     @Override
     public void collisionReaction(GameObject collidedWith)
     {
         PhysicsResolution.addContact(this, collidedWith);
-        if(collidedWith.getName().equals(("Bullet")))
+        if(dead == false && collidedWith.getName().equals(("Bullet")))
         {
             kill();
+            Player_1.enemyCounter++;
+            dead = true;
+
 
 
 

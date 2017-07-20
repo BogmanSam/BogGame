@@ -13,8 +13,9 @@ public class Enemy4 extends GameObject
     public Enemy4()
     {
         super("Enemy4", 60, 60, "rok.png");
-        setPosition(PFRandom.randomRange(-600, 600), PFRandom.randomRange(-600, 600));
+        setPosition(PFRandom.randomRange(-500, 500), PFRandom.randomRange(-500, 500));
         setRectangleCollider(30, 30);
+        Player_1.maxEnemies++;
 
 
 
@@ -23,6 +24,7 @@ public class Enemy4 extends GameObject
 
 
 
+    boolean dead = false;
     @Override public void update(float dt)
     {
         GameObject player_1 = ObjectManager.getGameObjectByName("Player_1");
@@ -41,10 +43,12 @@ public class Enemy4 extends GameObject
     @Override
     public void collisionReaction(GameObject collidedWith)
     {
-        if(collidedWith.getName().equals(("Bullet")))
+        if(dead == false && collidedWith.getName().equals(("Bullet")))
         {
             kill();
+            Player_1.enemyCounter++;
 
+            dead = true;
 
 
 
