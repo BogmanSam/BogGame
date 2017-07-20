@@ -42,6 +42,7 @@ public class Enemy extends GameObject
     @Override
     public void collisionReaction(GameObject collidedWith)
     {
+        PhysicsResolution.addContact(this, collidedWith);
         if(collidedWith.getName().equals(("Bullet")))
         {
             kill();
