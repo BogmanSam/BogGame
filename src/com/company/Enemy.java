@@ -46,6 +46,7 @@ public class Enemy extends GameObject
         if(collidedWith.getName().equals(("Bullet")))
         {
             kill();
+            Player_1.enemyCounter++;
 
 
 

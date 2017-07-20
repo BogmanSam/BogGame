@@ -13,7 +13,7 @@ public class Bullet extends GameObject
 {
     public Bullet()
     {
-        super("Bullet", 2, 2, "ball.png");
+        super("Bullet", 2, 2, "GreenBall.png");
 
     }
     public Vec2 direction;
@@ -23,12 +23,12 @@ public class Bullet extends GameObject
     }
     public Bullet(Vec2 direction_, Vec2 location)
     {
-        super("Bullet",2,2,"ball.png");
+        super("Bullet",2,2,"GreenBall.png");
         direction = new Vec2();
         direction.setX(direction_.getX());
         direction.setY(direction_.getY());
         setScaleX(3.0f);
-        setScaleY(7.0f);
+        setScaleY(3.0f);
         setPosition(location);
         setRectangleCollider(1f, 1f);
     }
