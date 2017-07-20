@@ -16,6 +16,6 @@ public class Rock extends GameObject
     @Override
     public void collisionReaction(GameObject collidedWith)
     {
-        PhysicsResolution.addContact(this, collidedWith);
+        // PhysicsResolution.addContact(this, collidedWith);
     }
 }

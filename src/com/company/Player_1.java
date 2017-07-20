@@ -115,6 +115,7 @@ public class Player_1 extends GameObject{
     @Override
     public void collisionReaction(GameObject collidedWith)
     {
+        PhysicsResolution.addContact(this, collidedWith);
         if(collidedWith.getName().equals(("Enemy")) || collidedWith.getName().equals(("Enemy2"))  || collidedWith.getName().equals(("Enemy3")) || collidedWith.getName().equals(("Enemy4")))
         {
             GameLevelManager.goToLevel(new Level_1());
