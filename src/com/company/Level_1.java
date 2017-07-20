@@ -48,10 +48,10 @@ public class Level_1 extends GameLevel{
         //Graphics.setDrawCollisionData(true);
         //Graphics.setCollisionDataColor(0, 1, 0);
 
-        for(int i= 0; i< 30; ++i)
+        for(int i= 0; i< 40; ++i)
         {
             Rock = new Rock();
-            Rock.setPosition(PFRandom.randomRange(-600, 600), PFRandom.randomRange(-600, 600));
+            Rock.setPosition(PFRandom.randomRange(-700, 700), PFRandom.randomRange(-700, 700));
             ObjectManager.addGameObject(Rock);
 
         }
