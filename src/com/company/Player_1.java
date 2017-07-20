@@ -20,11 +20,11 @@ public class Player_1 extends GameObject{
     {
         super ("Player_1",28,28,"BlueMan.png");
         setRectangleCollider(13f,13f);
+        maxEnemies = 0;
+        enemyCounter = 0;
     }
     private void shoot()
     {
-
-
 
         ObjectManager.addGameObject(new Bullet(direction, getPosition()));
     }
@@ -32,7 +32,8 @@ public class Player_1 extends GameObject{
     @ Override
     public void update(float dt)
     {
-        System.out.println(enemyCounter);
+        System.out.println("currEnemy Count: " + enemyCounter);
+        System.out.println("maxEnemy Count: " + maxEnemies);
         if(enemyCounter >= maxEnemies)
         {
             //do stuff

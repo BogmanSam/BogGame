@@ -80,7 +80,7 @@ public class Level_1 extends GameLevel{
 
     @Override
     public void initialize() {
-        Player_1.enemyCounter=0;
+        //Player_1.enemyCounter=0;
     }
     public static float dtcounter=0;
 
