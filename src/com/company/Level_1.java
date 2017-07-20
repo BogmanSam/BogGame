@@ -26,12 +26,14 @@ public class Level_1 extends GameLevel{
     public void create() {
         GameObject player_1 = new Player_1();
         ObjectManager.addGameObject(player_1);
+        player_1.setPositionY(300);
+        player_1.setPositionX(300);
 
         GameObject enemy = new com.company.Enemy();
         enemy.setPositionX(getRandomValue(-600,600));
         enemy.setPositionY(getRandomValue(-600,600));
         ObjectManager.addGameObject(enemy);
-        for(int i= 0; i< 30; ++i)
+        for(int i= 0; i< 10; ++i)
         {
             enemy = new Enemy();
             enemy.setPosition(PFRandom.randomRange(-600, 600), PFRandom.randomRange(-600, 600));
@@ -42,15 +44,16 @@ public class Level_1 extends GameLevel{
         enemy.setPositionX(getRandomValue(-600,600));
         enemy.setPositionY(getRandomValue(-600,600));
         ObjectManager.addGameObject(enemy);
-        for(int i= 0; i< 10; ++i)
+        for(int i= 0; i< 5; ++i)
         {
             enemy2 = new Enemy2();
             enemy2.setPosition(PFRandom.randomRange(-600, 600), PFRandom.randomRange(-600, 600));
             ObjectManager.addGameObject(enemy2);
         }
 
-        GameObject enemy3= new com.company.Enemy3();
-        ObjectManager.addGameObject(enemy3);
+        GameObject enemy3 = new com.company.Enemy3();
+        enemy3.setPositionX(getRandomValue(-600,600));
+        enemy3.setPositionY(getRandomValue(-600, 600));
 
         GameObject enemy4 = new com.company.Enemy4();
         ObjectManager.addGameObject(enemy4);
