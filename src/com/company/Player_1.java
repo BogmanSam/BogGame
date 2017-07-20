@@ -14,9 +14,11 @@ import java.awt.event.KeyEvent;
 import edu.digipen.math.Vec2;
 public class Player_1 extends GameObject{
     public Vec2 direction= new Vec2(1.0f,0.0f);
+    public static int enemyCounter = 0;
+    public static int maxEnemies = 0;
     public Player_1()
     {
-        super ("Player_1",28,28,"Omana.png");
+        super ("Player_1",28,28,"BlueMan.png");
         setRectangleCollider(13f,13f);
     }
     private void shoot()
@@ -30,10 +32,16 @@ public class Player_1 extends GameObject{
     @ Override
     public void update(float dt)
     {
+        System.out.println(enemyCounter);
+        if(enemyCounter >= maxEnemies)
+        {
+            //do stuff
+            GameLevelManager.goToLevel(new won());
+        }
 
         float movementSpeed= 3.0f;
         float rotationSpeed= 1.0f;
-        float shootingdelay = 0.5f;
+        float shootingdelay = 0.25f;
 
         if(InputManager.isPressed(KeyEvent.VK_UP))
         {
