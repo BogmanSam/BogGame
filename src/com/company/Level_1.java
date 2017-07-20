@@ -26,14 +26,21 @@ public class Level_1 extends GameLevel{
     public void create() {
         GameObject player_1 = new Player_1();
         ObjectManager.addGameObject(player_1);
+
         GameObject enemy = new com.company.Enemy();
+        enemy.setPositionX(getRandomValue(-600,600));
+        enemy.setPositionY(getRandomValue(-600,600));
         ObjectManager.addGameObject(enemy);
+
         GameObject enemy2 = new com.company.Enemy2();
         ObjectManager.addGameObject(enemy2);
+
         GameObject enemy3= new com.company.Enemy3();
         ObjectManager.addGameObject(enemy3);
+
         GameObject enemy4 = new com.company.Enemy4();
         ObjectManager.addGameObject(enemy4);
+
         GameObject Rock = new com.company.Rock();
         Rock.setPositionX(getRandomValue(-600, 600));
         Rock.setPositionY(getRandomValue(-600, 600));

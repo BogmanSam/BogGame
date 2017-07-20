@@ -13,7 +13,6 @@ public class Enemy extends GameObject
     public Enemy()
     {
         super("Enemy", 50, 50, "Boognish on Blue.png");
-        setPosition(-200, -200);
         setRectangleCollider(25, 25);
 
 
