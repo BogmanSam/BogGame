@@ -28,6 +28,8 @@ public class Enemy extends GameObject
         Vec2 vector = new Vec2();
 
 
+
+
         vector.setX(player_1.getPositionX() - getPositionX());
         vector.setY(player_1.getPositionY() - getPositionY());
         vector.normalize();
