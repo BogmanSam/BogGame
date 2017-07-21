@@ -23,55 +23,55 @@ public class Level_3 extends GameLevel {
 
     @Override
     public void create() {
-        GameObject enemy = new com.company.Enemy();
-        enemy.setPositionX(getRandomValue(-600,0));
-        enemy.setPositionY(getRandomValue(-600,600));
-        ObjectManager.addGameObject(enemy);
+        GameObject enemy9 = new com.company.Enemy9();
+        enemy9.setPositionX(getRandomValue(-600,0));
+        enemy9.setPositionY(getRandomValue(-600,600));
+        ObjectManager.addGameObject(enemy9);
         for(int i= 0; i< 30; ++i)
         {
-            enemy = new Enemy();
-            enemy.setPosition(PFRandom.randomRange(-600, 0), PFRandom.randomRange(-600, 600));
-            ObjectManager.addGameObject(enemy);
+            enemy9 = new Enemy();
+            enemy9.setPosition(PFRandom.randomRange(-600, 0), PFRandom.randomRange(-600, 600));
+            ObjectManager.addGameObject(enemy9);
         }
 
-        GameObject enemy2;
-        enemy.setPositionX(getRandomValue(-600,0));
-        enemy.setPositionY(getRandomValue(-600,600));
-        ObjectManager.addGameObject(enemy);
+        GameObject enemy10;
+        enemy9.setPositionX(getRandomValue(-600,0));
+        enemy9.setPositionY(getRandomValue(-600,600));
+        ObjectManager.addGameObject(enemy9);
         for(int i= 0; i< 20; ++i)
         {
-            enemy2 = new Enemy2();
-            enemy2.setPosition(PFRandom.randomRange(-600, 0), PFRandom.randomRange(-600, 600));
-            ObjectManager.addGameObject(enemy2);
+            enemy10 = new Enemy10();
+            enemy10.setPosition(PFRandom.randomRange(-600, 0), PFRandom.randomRange(-600, 600));
+            ObjectManager.addGameObject(enemy10);
         }
 
-        GameObject enemy3 = new com.company.Enemy3();
-        enemy3.setPositionX(-300);
-        enemy3.setPositionY(-300);
-        ObjectManager.addGameObject(enemy3);
+        GameObject enemy11 = new com.company.enemy11();
+        enemy11.setPositionX(-300);
+        enemy11.setPositionY(-300);
+        ObjectManager.addGameObject(enemy11);
         for(int i= 0; i< 1; ++i)
         {
-            enemy2 = new Enemy3();
-            enemy2.setPosition(PFRandom.randomRange(-600, 0), PFRandom.randomRange(-600, 600));
-            ObjectManager.addGameObject(enemy2);
+            enemy11 = new enemy11();
+            enemy11.setPosition(PFRandom.randomRange(-600, 0), PFRandom.randomRange(-600, 600));
+            ObjectManager.addGameObject(enemy11);
         }
 
-        GameObject enemy4 = new com.company.Enemy4();
-        ObjectManager.addGameObject(enemy4);
+        GameObject enemy12 = new com.company.enemy12();
+        ObjectManager.addGameObject(enemy12);
 
 
-        GameObject Rock = new com.company.Rock();
-        Rock.setPositionX(getRandomValue(-600, 600));
-        Rock.setPositionY(getRandomValue(-600, 600));
-        ObjectManager.addGameObject(Rock);
+        GameObject Rock3 = new com.company.Rock3();
+        Rock3.setPositionX(getRandomValue(-600, 600));
+        Rock3.setPositionY(getRandomValue(-600, 600));
+        ObjectManager.addGameObject(Rock3);
         //Graphics.setDrawCollisionData(true);
         //Graphics.setCollisionDataColor(0, 1, 0);
 
-        for(int i= 0; i< 40; ++i)
+        for(int i= 0; i< 20; ++i)
         {
-            Rock = new Rock();
-            Rock.setPosition(PFRandom.randomRange(-700, 700), PFRandom.randomRange(-700, 700));
-            ObjectManager.addGameObject(Rock);
+            Rock3 = new Rock3();
+            Rock3.setPosition(PFRandom.randomRange(-700, 700), PFRandom.randomRange(-700, 700));
+            ObjectManager.addGameObject(Rock3);
 
         }
 
@@ -84,48 +84,48 @@ public class Level_3 extends GameLevel {
         player_3.setPositionY(300);
         player_3.setPositionX(300);
 
-        GameObject enemy5 = new com.company.Enemy5();
-        enemy.setPositionX(getRandomValue(-600,0));
-        enemy.setPositionY(getRandomValue(-600,600));
-        ObjectManager.addGameObject(enemy);
+        GameObject enemy13 = new com.company.Enemy5();
+        enemy13.setPositionX(getRandomValue(-600,0));
+        enemy13.setPositionY(getRandomValue(-600,600));
+        ObjectManager.addGameObject(enemy13);
         for(int i= 0; i< 19; ++i)
         {
-            enemy5 = new Enemy5();
-            enemy5.setPosition(PFRandom.randomRange(-600, 0), PFRandom.randomRange(-600, 600));
-            ObjectManager.addGameObject(enemy);
+            enemy13 = new Enemy13();
+            enemy13.setPosition(PFRandom.randomRange(-600, 0), PFRandom.randomRange(-600, 600));
+            ObjectManager.addGameObject(enemy13);
         }
 
-        GameObject enemy6;
-        enemy.setPositionX(getRandomValue(-600,0));
-        enemy.setPositionY(getRandomValue(-600,600));
-        ObjectManager.addGameObject(enemy);
+        GameObject enemy14;
+        enemy14.setPositionX(getRandomValue(-600,0));
+        enemy14.setPositionY(getRandomValue(-600,600));
+        ObjectManager.addGameObject(enemy14);
         for(int i= 0; i< 16; ++i)
         {
-            enemy6 = new Enemy6();
-            enemy6.setPosition(PFRandom.randomRange(-600, 0), PFRandom.randomRange(-600, 600));
-            ObjectManager.addGameObject(enemy6);
+            enemy14 = new Enemy6();
+            enemy14.setPosition(PFRandom.randomRange(-600, 0), PFRandom.randomRange(-600, 600));
+            ObjectManager.addGameObject(enemy14);
         }
 
-        GameObject enemy7 = new com.company.Enemy7();
-        enemy7.setPositionX(-300);
-        enemy7.setPositionY(-300);
+        GameObject enemy15 = new com.company.Enemy15();
+        enemy15.setPositionX(-300);
+        enemy15.setPositionY(-300);
 
-        GameObject enemy8 = new com.company.Enemy8();
-        ObjectManager.addGameObject(enemy8);
+        GameObject enemy16 = new com.company.Enemy16();
+        ObjectManager.addGameObject(enemy16);
 
 
-        GameObject Rock2 = new com.company.Rock2();
-        Rock2.setPositionX(getRandomValue(-600, 600));
-        Rock2.setPositionY(getRandomValue(-600, 600));
-        ObjectManager.addGameObject(Rock2);
+        GameObject Rock4 = new com.company.Rock4();
+        Rock4.setPositionX(getRandomValue(-600, 600));
+        Rock4.setPositionY(getRandomValue(-600, 600));
+        ObjectManager.addGameObject(Rock4);
         //Graphics.setDrawCollisionData(true);
         //Graphics.setCollisionDataColor(0, 1, 0);
 
-        for(int i= 0; i< 40; ++i)
+        for(int i= 0; i< 20; ++i)
         {
-            Rock2 = new Rock2();
-            Rock2.setPosition(PFRandom.randomRange(-700, 700), PFRandom.randomRange(-700, 700));
-            ObjectManager.addGameObject(Rock2);
+            Rock4 = new Rock4();
+            Rock4.setPosition(PFRandom.randomRange(-700, 700), PFRandom.randomRange(-700, 700));
+            ObjectManager.addGameObject(Rock4);
 
         }
 
