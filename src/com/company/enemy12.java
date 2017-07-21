@@ -1,16 +1,19 @@
 package com.company;
 
+/**
+ * Created by sam.richard on 7/21/2017.
+ */
 import edu.digipen.gameobject.GameObject;
-        import edu.digipen.gameobject.ObjectManager;
-        import edu.digipen.math.PFRandom;
-        import edu.digipen.math.Vec2;
+import edu.digipen.gameobject.ObjectManager;
+import edu.digipen.math.PFRandom;
+import edu.digipen.math.Vec2;
 
 /**
  * Created by logan.katzer on 7/21/2017.
  */
-public class Enemy8 extends GameObject {
+public class enemy12 extends GameObject {
 
-    public Enemy8()
+    public enemy12()
     {
         super("Enemy8", 60, 60, "rok.png");
         setPosition(PFRandom.randomRange(-500, 500), PFRandom.randomRange(-500, 500));
