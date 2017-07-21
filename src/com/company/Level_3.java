@@ -23,7 +23,7 @@ public class Level_3 extends GameLevel {
 
     @Override
     public void create() {
-        GameObject enemy9 = new com.company.Enemy9();
+        GameObject enemy9 = new com.company.enemy9();
         enemy9.setPositionX(getRandomValue(-600,0));
         enemy9.setPositionY(getRandomValue(-600,600));
         ObjectManager.addGameObject(enemy9);
