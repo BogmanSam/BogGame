@@ -60,7 +60,7 @@ public class Player_3 extends GameObject {
 
         float movementSpeed = 3.0f;
         float rotationSpeed = 1.0f;
-        float shootingdelay = 1.15f;
+        float shootingdelay = 0.1f;
 
         if (InputManager.isPressed(KeyEvent.VK_UP)) {
             setRotation(0);
