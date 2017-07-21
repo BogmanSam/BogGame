@@ -26,7 +26,7 @@ public class Level_2 extends GameLevel{
     @Override
     public void create() {
         System.out.println("You winner");
-        GameObject wonText = new GameObject("lolWin", 2000, 2000, "Qum.png");
+        GameObject wonText = new GameObject("lolWin", 2000, 2000, "Bogman.png");
         ObjectManager.addGameObject(wonText);
         GameObject player_2 = new Player_2();
         ObjectManager.addGameObject(player_2);

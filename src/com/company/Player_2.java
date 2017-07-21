@@ -137,7 +137,7 @@ public class Player_2 extends GameObject {
         PhysicsResolution.addContact(this, collidedWith);
         if(collidedWith.getName().equals(("Enemy5")) || collidedWith.getName().equals(("Enemy6"))  || collidedWith.getName().equals(("Enemy7")) || collidedWith.getName().equals(("Enemy8")))
         {
-            GameLevelManager.goToLevel(new MainMenu());
+            GameLevelManager.goToLevel(new MainMenu2());
 
 
 

@@ -10,15 +10,19 @@ import edu.digipen.level.GameLevelManager;
 import java.awt.event.KeyEvent;
 
 
-public class MainMenu extends GameLevel {
+public class MainMenu2 extends GameLevel {
 
 
     @Override
     public void create()
     {
-        GameObject startText = new GameObject("MainBackground", 900, 900, "MainMen.png");
+        GameObject startText = new GameObject("StartText", 400, 100, "StartText.png");
+        startText.setPositionY(100);
         ObjectManager.addGameObject(startText);
 
+        GameObject quitText = new GameObject("QuitText", 400, 100, "QuitText.png");
+        quitText.setPositionY(-100);
+        ObjectManager.addGameObject(quitText);
     }
 
     @Override
@@ -28,20 +32,17 @@ public class MainMenu extends GameLevel {
 
     @Override
     public void update(float dt) {
-        if(InputManager.isPressed(KeyEvent.VK_ESCAPE))
+        if(InputManager.isPressed(KeyEvent.VK_BACK_SPACE))
         {
-            Game.quit();
+            GameLevelManager.goToLevel(new MainMenu());
 
 
         }
         if(InputManager.isPressed(KeyEvent.VK_SPACE))
         {
-            GameLevelManager.goToLevel(new Level_1());
+            GameLevelManager.goToLevel(new Level_2());
         }
-        if(InputManager.isPressed(KeyEvent.VK_G))
-        {
-            GameLevelManager.goToLevel(new com.company.MainMenu2());
-        }
+
 
 
 
