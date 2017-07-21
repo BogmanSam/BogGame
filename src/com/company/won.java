@@ -38,6 +38,10 @@ public class won extends GameLevel {
 
 
         }
+        if (InputManager.isPressed(KeyEvent.VK_G)) {
+            GameLevelManager.goToLevel(new MainMenu());
+        }
+
     }
 
 
