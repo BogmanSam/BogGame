@@ -27,18 +27,18 @@ public class Level_3 extends GameLevel {
         enemy9.setPositionX(getRandomValue(-600,0));
         enemy9.setPositionY(getRandomValue(-600,600));
         ObjectManager.addGameObject(enemy9);
-        for(int i= 0; i< 30; ++i)
+        for(int i= 0; i< 15; ++i)
         {
             enemy9 = new Enemy();
             enemy9.setPosition(PFRandom.randomRange(-600, 0), PFRandom.randomRange(-600, 600));
             ObjectManager.addGameObject(enemy9);
         }
 
-        GameObject enemy10;
-        enemy9.setPositionX(getRandomValue(-600,0));
-        enemy9.setPositionY(getRandomValue(-600,600));
+        GameObject enemy10 = new com.company.enemy10();
+        enemy10.setPositionX(getRandomValue(-600,0));
+        enemy10.setPositionY(getRandomValue(-600,600));
         ObjectManager.addGameObject(enemy9);
-        for(int i= 0; i< 20; ++i)
+        for(int i= 0; i< 10; ++i)
         {
             enemy10 = new enemy10();
             enemy10.setPosition(PFRandom.randomRange(-600, 0), PFRandom.randomRange(-600, 600));
@@ -84,22 +84,22 @@ public class Level_3 extends GameLevel {
         player_3.setPositionY(300);
         player_3.setPositionX(300);
 
-        GameObject enemy13 = new com.company.Enemy5();
+        GameObject enemy13 = new com.company.enemy13();
         enemy13.setPositionX(getRandomValue(-600,0));
         enemy13.setPositionY(getRandomValue(-600,600));
         ObjectManager.addGameObject(enemy13);
-        for(int i= 0; i< 19; ++i)
+        for(int i= 0; i< 15; ++i)
         {
             enemy13 = new enemy13();
             enemy13.setPosition(PFRandom.randomRange(-600, 0), PFRandom.randomRange(-600, 600));
             ObjectManager.addGameObject(enemy13);
         }
 
-        GameObject enemy14;
+        GameObject enemy14 = new com.company.enemy14();
         enemy14.setPositionX(getRandomValue(-600,0));
         enemy14.setPositionY(getRandomValue(-600,600));
         ObjectManager.addGameObject(enemy14);
-        for(int i= 0; i< 16; ++i)
+        for(int i= 0; i< 10; ++i)
         {
             enemy14 = new Enemy6();
             enemy14.setPosition(PFRandom.randomRange(-600, 0), PFRandom.randomRange(-600, 600));

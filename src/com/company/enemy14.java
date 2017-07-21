@@ -24,7 +24,7 @@ public class enemy14 extends GameObject
     }
     @Override public void update(float dt)
     {
-        GameObject player_3 = ObjectManager.getGameObjectByName("Player_1");
+        GameObject player_3 = ObjectManager.getGameObjectByName("Player_3");
         Vec2 vector = new Vec2();
 
         vector.setX(player_3.getPositionX() - getPositionX());
