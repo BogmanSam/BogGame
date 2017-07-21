@@ -23,13 +23,13 @@ public class Level_3 extends GameLevel {
 
     @Override
     public void create() {
-        GameObject enemy9 = new com.company.enemy9();
+        GameObject enemy9 = new com.company.Enemy9();
         enemy9.setPositionX(getRandomValue(-600,0));
         enemy9.setPositionY(getRandomValue(-600,600));
         ObjectManager.addGameObject(enemy9);
         for(int i= 0; i< 9; ++i)
         {
-            enemy9 = new Enemy();
+            enemy9 = new Enemy9();
             enemy9.setPosition(PFRandom.randomRange(-600, 0), PFRandom.randomRange(-600, 600));
             ObjectManager.addGameObject(enemy9);
         }
@@ -101,7 +101,7 @@ public class Level_3 extends GameLevel {
         ObjectManager.addGameObject(enemy14);
         for(int i= 0; i< 9; ++i)
         {
-            enemy14 = new Enemy6();
+            enemy14 = new enemy14();
             enemy14.setPosition(PFRandom.randomRange(-600, 0), PFRandom.randomRange(-600, 600));
             ObjectManager.addGameObject(enemy14);
         }

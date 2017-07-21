@@ -15,7 +15,7 @@ public class enemy13 extends GameObject
 {
     public enemy13()
     {
-        super("enemy3", 50, 50, "Sepiks.png");
+        super("enemy13", 50, 50, "Sepiks.png");
         setRectangleCollider(25, 25);
 
         Player_3.maxEnemies++;

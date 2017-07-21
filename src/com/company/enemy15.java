@@ -16,7 +16,7 @@ public class enemy15 extends GameObject
 
     public enemy15()
     {
-        super("Enemy3", 200, 200, "BigBadGuy.png");
+        super("enemy15", 200, 200, "BigBadGuy.png");
         setPosition(-800, 800);
         setRectangleCollider (100, 100);
 

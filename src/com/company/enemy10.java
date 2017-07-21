@@ -13,7 +13,7 @@ import edu.digipen.math.Vec2;
 public class enemy10 extends edu.digipen.gameobject.GameObject {
     public enemy10()
     {
-        super("Enemy6", 25, 25, "Logan.png");
+        super("enemy10", 25, 25, "Logan.png");
         setPosition(200, 200);
         setRectangleCollider(12.5f, 12.5f);
 
