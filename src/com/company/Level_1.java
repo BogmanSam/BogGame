@@ -25,6 +25,9 @@ public class Level_1 extends GameLevel{
 
     @Override
     public void create() {
+        System.out.println("You winner");
+        GameObject startText = new GameObject("lolWin", 2000, 2000, "Bogan.png");
+        ObjectManager.addGameObject(startText);
         GameObject player_1 = new Player_1();
         ObjectManager.addGameObject(player_1);
         player_1.setPositionY(300);
@@ -58,6 +61,7 @@ public class Level_1 extends GameLevel{
 
         GameObject enemy4 = new com.company.Enemy4();
         ObjectManager.addGameObject(enemy4);
+
 
         GameObject Rock = new com.company.Rock();
         Rock.setPositionX(getRandomValue(-600, 600));

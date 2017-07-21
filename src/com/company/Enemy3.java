@@ -13,7 +13,7 @@ public class Enemy3 extends GameObject
     public Enemy3()
     {
         super("Enemy3", 200, 200, "balded.png");
-        setPosition(-600, 600);
+        setPosition(-800, 800);
         setRectangleCollider (100, 100);
 
 
