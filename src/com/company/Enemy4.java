@@ -12,7 +12,7 @@ public class Enemy4 extends GameObject
 {
     public Enemy4()
     {
-        super("Enemy4", 60, 60, "rok.png");
+        super("Enemy4", 60, 60, "Rock.png");
         setPosition(PFRandom.randomRange(-500, 500), PFRandom.randomRange(-500, 500));
         setRectangleCollider(30, 30);
         Player_1.maxEnemies++;

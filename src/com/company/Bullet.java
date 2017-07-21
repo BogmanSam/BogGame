@@ -13,7 +13,7 @@ public class Bullet extends GameObject
 {
     public Bullet()
     {
-        super("Bullet", 2, 2, "GreenBall.png");
+        super("Bullet", 3, 3, "GreenBall.png");
 
     }
     public Vec2 direction;
@@ -23,21 +23,21 @@ public class Bullet extends GameObject
     }
     public Bullet(Vec2 direction_, Vec2 location)
     {
-        super("Bullet",2,2,"GreenBall.png");
+        super("Bullet",3,3,"GreenBall.png");
         direction = new Vec2();
         direction.setX(direction_.getX());
         direction.setY(direction_.getY());
         setScaleX(3.0f);
         setScaleY(3.0f);
         setPosition(location);
-        setRectangleCollider(1f, 1f);
+        setRectangleCollider(1.5f, 1.5f);
     }
 
     @Override
     public void update(float dt)
     {
-        setPositionX(getPositionX() + direction.getX() * 5);
-        setPositionY(getPositionY() + direction.getY() * 5);
+        setPositionX(getPositionX() + direction.getX() * 7.5f);
+        setPositionY(getPositionY() + direction.getY() * 7.5f);
         if(isInViewport() == false)
         {
             kill();

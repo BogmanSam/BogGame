@@ -8,7 +8,7 @@ import edu.digipen.gameobject.GameObject;
 public class Rock extends GameObject
 {
     public Rock() {
-        super("rock", 60, 60, "rok.png");
+        super("rock", 60, 60, "Rock.png");
         setRectangleCollider(30, 30);
         setMass(0);
 

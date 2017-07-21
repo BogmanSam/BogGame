@@ -11,7 +11,7 @@ public class Enemy2 extends GameObject
 {
     public Enemy2()
     {
-        super("Enemy2", 25, 25, "Logan.png");
+        super("Enemy2", 25, 25, "SuperCharger.png");
         setPosition(200, 200);
         setRectangleCollider(12.5f, 12.5f);
 
