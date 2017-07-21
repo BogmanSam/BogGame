@@ -38,7 +38,7 @@ public class Player_3 extends GameObject {
     public static int maxEnemies = 0;
 
     public Player_3() {
-        super("Player_2", 28, 28, "omananna.png");
+        super("Player_3", 28, 28, "omananna.png");
         setRectangleCollider(13f, 13f);
         maxEnemies = 0;
         enemyCounter = 0;
@@ -65,28 +65,28 @@ public class Player_3 extends GameObject {
         if (InputManager.isPressed(KeyEvent.VK_UP)) {
             setRotation(0);
             direction.set(0.0f, 1.0f);
-            if (Level_2.dtcounter >= shootingdelay) {
+            if (Level_3.dtcounter >= shootingdelay) {
                 System.out.println("Shoot Allowed");
                 shoot();
-                Level_2.dtcounter = 0;
+                Level_3.dtcounter = 0;
             }
         }
         if (InputManager.isPressed(KeyEvent.VK_DOWN)) {
             setRotation(180);
             direction.set(0.0f, -1.0f);
-            if (Level_2.dtcounter >= shootingdelay) {
+            if (Level_3.dtcounter >= shootingdelay) {
                 System.out.println("Shoot Allowed");
                 shoot();
-                Level_2.dtcounter = 0;
+                Level_3.dtcounter = 0;
             }
         }
         if (InputManager.isPressed(KeyEvent.VK_LEFT)) {
             setRotation(270);
             direction.set(-1.0f, 0.0f);
-            if (Level_2.dtcounter >= shootingdelay) {
+            if (Level_3.dtcounter >= shootingdelay) {
                 System.out.println("Shoot Allowed");
                 shoot();
-                Level_2.dtcounter = 0;
+                Level_3.dtcounter = 0;
             }
         }
         if (InputManager.isPressed(KeyEvent.VK_RIGHT)) {
@@ -95,10 +95,10 @@ public class Player_3 extends GameObject {
 
 
             boolean haswaited;
-            if (Level_2.dtcounter >= shootingdelay) {
+            if (Level_3.dtcounter >= shootingdelay) {
                 System.out.println("Shoot Allowed");
                 shoot();
-                Level_2.dtcounter = 0;
+                Level_3.dtcounter = 0;
             }
 
 

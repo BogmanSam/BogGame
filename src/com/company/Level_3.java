@@ -27,7 +27,7 @@ public class Level_3 extends GameLevel {
         enemy9.setPositionX(getRandomValue(-600,0));
         enemy9.setPositionY(getRandomValue(-600,600));
         ObjectManager.addGameObject(enemy9);
-        for(int i= 0; i< 15; ++i)
+        for(int i= 0; i< 9; ++i)
         {
             enemy9 = new Enemy();
             enemy9.setPosition(PFRandom.randomRange(-600, 0), PFRandom.randomRange(-600, 600));
@@ -38,7 +38,7 @@ public class Level_3 extends GameLevel {
         enemy10.setPositionX(getRandomValue(-600,0));
         enemy10.setPositionY(getRandomValue(-600,600));
         ObjectManager.addGameObject(enemy9);
-        for(int i= 0; i< 10; ++i)
+        for(int i= 0; i< 9; ++i)
         {
             enemy10 = new enemy10();
             enemy10.setPosition(PFRandom.randomRange(-600, 0), PFRandom.randomRange(-600, 600));
@@ -88,7 +88,7 @@ public class Level_3 extends GameLevel {
         enemy13.setPositionX(getRandomValue(-600,0));
         enemy13.setPositionY(getRandomValue(-600,600));
         ObjectManager.addGameObject(enemy13);
-        for(int i= 0; i< 15; ++i)
+        for(int i= 0; i< 9; ++i)
         {
             enemy13 = new enemy13();
             enemy13.setPosition(PFRandom.randomRange(-600, 0), PFRandom.randomRange(-600, 600));
@@ -99,7 +99,7 @@ public class Level_3 extends GameLevel {
         enemy14.setPositionX(getRandomValue(-600,0));
         enemy14.setPositionY(getRandomValue(-600,600));
         ObjectManager.addGameObject(enemy14);
-        for(int i= 0; i< 10; ++i)
+        for(int i= 0; i< 9; ++i)
         {
             enemy14 = new Enemy6();
             enemy14.setPosition(PFRandom.randomRange(-600, 0), PFRandom.randomRange(-600, 600));
