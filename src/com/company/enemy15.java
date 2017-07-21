@@ -29,12 +29,12 @@ public class enemy15 extends GameObject
 
     @Override public void update(float dt)
     {
-        GameObject player_1 = ObjectManager.getGameObjectByName("Player_1");
+        GameObject player_3 = ObjectManager.getGameObjectByName("Player_1");
         Vec2 vector = new Vec2();
 
 
-        vector.setX(player_1.getPositionX() - getPositionX());
-        vector.setY(player_1.getPositionY() - getPositionY());
+        vector.setX(player_3.getPositionX() - getPositionX());
+        vector.setY(player_3.getPositionY() - getPositionY());
         vector.normalize();
         float speed = 0.5f;
         setPositionX(getPositionX() + vector.getX() * speed);

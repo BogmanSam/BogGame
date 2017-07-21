@@ -18,17 +18,17 @@ public class enemy14 extends GameObject
         setPosition(200, 200);
         setRectangleCollider(12.5f, 12.5f);
 
-        Player_1.maxEnemies++;
+        Player_3.maxEnemies++;
 
 
     }
     @Override public void update(float dt)
     {
-        GameObject player_1 = ObjectManager.getGameObjectByName("Player_1");
+        GameObject player_3 = ObjectManager.getGameObjectByName("Player_1");
         Vec2 vector = new Vec2();
 
-        vector.setX(player_1.getPositionX() - getPositionX());
-        vector.setY(player_1.getPositionY() - getPositionY());
+        vector.setX(player_3.getPositionX() - getPositionX());
+        vector.setY(player_3.getPositionY() - getPositionY());
         vector.normalize();
         float speed = 3.3f;
         setPositionX(getPositionX() + vector.getX() * speed);
@@ -43,7 +43,7 @@ public class enemy14 extends GameObject
         if(dead == false && collidedWith.getName().equals(("Bullet")))
         {
             kill();
-            Player_1.enemyCounter++;
+            Player_3.enemyCounter++;
             dead = true;
 
 

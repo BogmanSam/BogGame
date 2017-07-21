@@ -17,17 +17,17 @@ public class enemy10 extends edu.digipen.gameobject.GameObject {
         setPosition(200, 200);
         setRectangleCollider(12.5f, 12.5f);
 
-        Player_2.maxEnemies++;
+        Player_3.maxEnemies++;
 
 
     }
     @Override public void update(float dt)
     {
-        GameObject player_2 = ObjectManager.getGameObjectByName("Player_2");
+        GameObject player_3 = ObjectManager.getGameObjectByName("Player_3");
         Vec2 vector = new Vec2();
 
-        vector.setX(player_2.getPositionX() - getPositionX());
-        vector.setY(player_2.getPositionY() - getPositionY());
+        vector.setX(player_3.getPositionX() - getPositionX());
+        vector.setY(player_3.getPositionY() - getPositionY());
         vector.normalize();
         float speed = 3.3f;
         setPositionX(getPositionX() + vector.getX() * speed);
@@ -42,7 +42,7 @@ public class enemy10 extends edu.digipen.gameobject.GameObject {
         if(dead == false && collidedWith.getName().equals(("Bullet")))
         {
             kill();
-            Player_2.enemyCounter++;
+            Player_3.enemyCounter++;
             dead = true;
 
 

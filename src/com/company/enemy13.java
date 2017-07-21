@@ -18,7 +18,7 @@ public class enemy13 extends GameObject
         super("enemy3", 50, 50, "Sepiks.png");
         setRectangleCollider(25, 25);
 
-        Player_1.maxEnemies++;
+        Player_3.maxEnemies++;
 
 
     }
@@ -27,14 +27,14 @@ public class enemy13 extends GameObject
 
     @Override public void update(float dt)
     {
-        GameObject player_1 = ObjectManager.getGameObjectByName("Player_1");
+        GameObject player_3 = ObjectManager.getGameObjectByName("Player_3");
         Vec2 vector = new Vec2();
 
 
 
 
-        vector.setX(player_1.getPositionX() - getPositionX());
-        vector.setY(player_1.getPositionY() - getPositionY());
+        vector.setX(player_3.getPositionX() - getPositionX());
+        vector.setY(player_3.getPositionY() - getPositionY());
         vector.normalize();
         float speed = 1f;
         setPositionX(getPositionX() + vector.getX() * speed);

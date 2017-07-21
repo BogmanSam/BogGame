@@ -18,7 +18,7 @@ public class enemy12 extends GameObject {
         super("Enemy8", 60, 60, "rok.png");
         setPosition(PFRandom.randomRange(-500, 500), PFRandom.randomRange(-500, 500));
         setRectangleCollider(30, 30);
-        Player_2.maxEnemies++;
+        Player_3.maxEnemies++;
 
 
 
@@ -30,12 +30,12 @@ public class enemy12 extends GameObject {
     boolean dead = false;
     @Override public void update(float dt)
     {
-        GameObject player_2 = ObjectManager.getGameObjectByName("Player_2");
+        GameObject player_3 = ObjectManager.getGameObjectByName("Player_2");
         Vec2 vector = new Vec2();
 
 
-        vector.setX(player_2.getPositionX() - getPositionX());
-        vector.setY(player_2.getPositionY() - getPositionY());
+        vector.setX(player_3.getPositionX() - getPositionX());
+        vector.setY(player_3.getPositionY() - getPositionY());
         vector.normalize();
         float speed = 0.005f;
         setPositionX(getPositionX() + vector.getX() * speed);
@@ -49,7 +49,7 @@ public class enemy12 extends GameObject {
         if(dead == false && collidedWith.getName().equals(("Bullet")))
         {
             kill();
-            Player_2.enemyCounter++;
+            Player_3.enemyCounter++;
 
             dead = true;
 
