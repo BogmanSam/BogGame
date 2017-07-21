@@ -42,6 +42,9 @@ public class MainMenu2 extends GameLevel {
         {
             GameLevelManager.goToLevel(new Level_2());
         }
+        if (InputManager.isPressed(KeyEvent.VK_9)) {
+            GameLevelManager.goToLevel(new Level_3());
+        }
 
 
 
