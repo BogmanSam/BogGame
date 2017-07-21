@@ -30,7 +30,7 @@ public class enemy12 extends GameObject {
     boolean dead = false;
     @Override public void update(float dt)
     {
-        GameObject player_3 = ObjectManager.getGameObjectByName("Player_2");
+        GameObject player_3 = ObjectManager.getGameObjectByName("Player_3");
         Vec2 vector = new Vec2();
 
 

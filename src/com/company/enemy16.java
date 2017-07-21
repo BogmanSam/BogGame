@@ -18,7 +18,7 @@ public class enemy16 extends GameObject
         super("enemy16", 60, 60, "EvilRock.png");
         setPosition(PFRandom.randomRange(-500, 500), PFRandom.randomRange(-500, 500));
         setRectangleCollider(30, 30);
-        Player_1.maxEnemies++;
+        Player_3.maxEnemies++;
 
 
 
@@ -30,12 +30,12 @@ public class enemy16 extends GameObject
     boolean dead = false;
     @Override public void update(float dt)
     {
-        GameObject player_1 = ObjectManager.getGameObjectByName("Player_1");
+        GameObject player_3 = ObjectManager.getGameObjectByName("Player_3");
         Vec2 vector = new Vec2();
 
 
-        vector.setX(player_1.getPositionX() - getPositionX());
-        vector.setY(player_1.getPositionY() - getPositionY());
+        vector.setX(player_3.getPositionX() - getPositionX());
+        vector.setY(player_3.getPositionY() - getPositionY());
         vector.normalize();
         float speed = 0.005f;
         setPositionX(getPositionX() + vector.getX() * speed);
@@ -49,7 +49,7 @@ public class enemy16 extends GameObject
         if(dead == false && collidedWith.getName().equals(("Bullet")))
         {
             kill();
-            Player_1.enemyCounter++;
+            Player_3.enemyCounter++;
 
             dead = true;
 

@@ -23,6 +23,13 @@ public class Level_3 extends GameLevel {
 
     @Override
     public void create() {
+        System.out.println("You winner");
+        GameObject wonText = new GameObject("lolWin", 2000, 2000, "Bogman.png");
+        ObjectManager.addGameObject(wonText);
+        GameObject player_3 = new Player_3();
+        ObjectManager.addGameObject(player_3);
+        player_3.setPositionY(300);
+        player_3.setPositionX(300);
         GameObject enemy9 = new com.company.Enemy9();
         enemy9.setPositionX(getRandomValue(-600,0));
         enemy9.setPositionY(getRandomValue(-600,600));
@@ -76,13 +83,7 @@ public class Level_3 extends GameLevel {
         }
 
 
-        System.out.println("You winner");
-        GameObject wonText = new GameObject("lolWin", 2000, 2000, "Bogman.png");
-        ObjectManager.addGameObject(wonText);
-        GameObject player_3 = new Player_3();
-        ObjectManager.addGameObject(player_3);
-        player_3.setPositionY(300);
-        player_3.setPositionX(300);
+
 
         GameObject enemy13 = new com.company.enemy13();
         enemy13.setPositionX(getRandomValue(-600,0));

@@ -29,7 +29,7 @@ public class enemy15 extends GameObject
 
     @Override public void update(float dt)
     {
-        GameObject player_3 = ObjectManager.getGameObjectByName("Player_1");
+        GameObject player_3 = ObjectManager.getGameObjectByName("Player_3");
         Vec2 vector = new Vec2();
 
 

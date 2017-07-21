@@ -51,7 +51,7 @@ public class enemy13 extends GameObject
         if(dead == false && collidedWith.getName().equals(("Bullet")))
         {
             kill();
-            Player_1.enemyCounter++;
+            Player_3.enemyCounter++;
             dead = true;
 
 
