@@ -67,7 +67,16 @@ public class Level_1 extends GameLevel{
         }
 
         GameObject enemy4 = new com.company.Enemy4();
+        enemy4.setPositionX(getRandomValue(-500, 500));
+        enemy4.setPositionY(getRandomValue(-500, 500));
         ObjectManager.addGameObject(enemy4);
+        for(int i= 0; i< 5; ++i)
+        {
+            enemy2 = new Enemy4();
+            enemy2.setPosition(PFRandom.randomRange(-500, 500), PFRandom.randomRange(-500, 500));
+            ObjectManager.addGameObject(enemy2);
+        }
+
 
 
         GameObject Rock = new com.company.Rock();
@@ -77,7 +86,7 @@ public class Level_1 extends GameLevel{
         //Graphics.setDrawCollisionData(true);
         //Graphics.setCollisionDataColor(0, 1, 0);
 
-        for(int i= 0; i< 40; ++i)
+        for(int i= 0; i< 33; ++i)
         {
             Rock = new Rock();
             Rock.setPosition(PFRandom.randomRange(-700, 700), PFRandom.randomRange(-700, 700));
